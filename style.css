@@ -1,19 +1,23 @@
-/* Personalização básica */
+/* Definindo uma cor de fundo suave para toda a página */
 body {
+    background: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Ajustes no card para um visual mais moderno */
+  .card {
+    border-radius: 10px;
+  }
+  
+  /* Garantindo que o header do card mantenha os cantos arredondados */
+  .card-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  /* Opcional: efeito de hover nos itens da lista para melhorar a interação */
+  .list-group-item:hover {
     background-color: #f8f9fa;
-}
-
-h1, h2 {
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-}
-
-.list-group-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-input.form-control {
-    flex: 1;
-}
+    cursor: pointer;
+  }
+  

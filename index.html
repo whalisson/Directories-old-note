@@ -1,39 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Matérias</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Arquivo CSS Personalizado -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Matérias</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container py-5">
-        <h1 class="text-center text-primary mb-4">Cadastro de Matérias</h1>
-
-        <!-- Formulário para adicionar nova matéria -->
-        <form id="formMateria" class="row g-3" onsubmit="adicionarMateria(); return false;">
-            <div class="col-md-8">
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card shadow-sm">
+          <div class="card-header bg-primary text-white text-center py-3">
+            <h1 class="mb-0">Cadastro de Matérias</h1>
+          </div>
+          <div class="card-body">
+            <!-- Formulário para adicionar nova matéria -->
+            <form id="formMateria" class="row g-3" onsubmit="adicionarMateria(); return false;">
+              <div class="col-md-9">
                 <input type="text" id="novaMateria" class="form-control" placeholder="Digite o nome da matéria" required>
-            </div>
-            <div class="col-md-4">
-                <button type="submit" class="btn btn-success w-100">Adicionar Matéria</button>
-            </div>
-        </form>
+              </div>
+              <div class="col-md-3">
+                <button type="submit" class="btn btn-success w-100">Adicionar</button>
+              </div>
+            </form>
 
-        <h2 class="text-center text-secondary mt-5">Lista de Matérias</h2>
+            <hr class="my-4">
 
-        <!-- Lista de matérias -->
-        <ul id="listaMaterias" class="list-group mt-3">
-            <!-- Itens da lista serão gerados dinamicamente -->
-        </ul>
+            <h2 class="text-center text-secondary mb-3">Lista de Matérias</h2>
+
+            <!-- Lista de matérias -->
+            <ul id="listaMaterias" class="list-group">
+              <!-- Itens da lista serão gerados dinamicamente -->
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Arquivo JavaScript -->
-    <script src="script.js"></script>
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Arquivo JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
